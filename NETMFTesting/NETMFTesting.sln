@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NETMFTesting", "NETMFTesting\NETMFTesting.csproj", "{5959E7D4-88E9-4CBB-B51B-5FD5EE164065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marknic.TestRunner", "Marknic.TestRunner\Marknic.TestRunner.csproj", "{31223C89-FC73-49A0-AF84-B4201A4F4384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marknic.TestRunner.Rigging", "Marknic.TestRunner.Rigging\Marknic.TestRunner.Rigging.csproj", "{3B9F95F2-EACD-4609-A8FA-459A088C081D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5959E7D4-88E9-4CBB-B51B-5FD5EE164065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5959E7D4-88E9-4CBB-B51B-5FD5EE164065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5959E7D4-88E9-4CBB-B51B-5FD5EE164065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5959E7D4-88E9-4CBB-B51B-5FD5EE164065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31223C89-FC73-49A0-AF84-B4201A4F4384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31223C89-FC73-49A0-AF84-B4201A4F4384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31223C89-FC73-49A0-AF84-B4201A4F4384}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{31223C89-FC73-49A0-AF84-B4201A4F4384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31223C89-FC73-49A0-AF84-B4201A4F4384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31223C89-FC73-49A0-AF84-B4201A4F4384}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3B9F95F2-EACD-4609-A8FA-459A088C081D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9F95F2-EACD-4609-A8FA-459A088C081D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9F95F2-EACD-4609-A8FA-459A088C081D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9F95F2-EACD-4609-A8FA-459A088C081D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
