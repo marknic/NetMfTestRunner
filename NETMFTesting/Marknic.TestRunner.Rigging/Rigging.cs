@@ -34,10 +34,18 @@ namespace Marknic.TestRunner.Rigging
             {
                 var methodList = type.GetMethods(BindingFlags.Public | BindingFlags.Instance);
 
+                object instance = null;
+
                 foreach (var method in methodList)
                 {
                     // Do we have a test?
                     if (!method.Name.StartsWith("Test")) continue;
+
+                    if (instance == null)
+                    {
+                        var constructor = type.GetConstructor(new Type[] { });
+                        instance = constructor.Invoke(new object[] {});
+                    }
 
                     _totalCount++;
 
@@ -51,7 +59,7 @@ namespace Marknic.TestRunner.Rigging
 
                     try
                     {
-                        method.Invoke(null, null);
+                        method.Invoke(instance, null);
 
                         // If an exception was expected then create one for reporting
                         if (!result.Succeeded)
@@ -68,6 +76,12 @@ namespace Marknic.TestRunner.Rigging
                     if (!result.Succeeded) _failureCount++;
 
                     ResultList.Add(result);
+                }
+
+                var disposable = instance as IDisposable;
+                if (disposable != null)
+                {
+                    disposable.Dispose();
                 }
             }
 
